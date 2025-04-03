@@ -14,7 +14,7 @@ function changeLanguage() {
   }
   select.value = hash
   if (!langArr['title'][hash]) return
-  document.querySelector('title').innerHTML = langArr['title'][hash]
+  document.querySelector('title').innerHTML = `${langArr['title'][hash]} #${hash}`
   for (let key in langArr) {
     let element = document.querySelector(`.lang-${key}`)
     if (element) {
